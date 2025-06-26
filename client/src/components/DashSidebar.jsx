@@ -44,7 +44,7 @@ export default function DashSidebar() {
                 <Sidebar.ItemGroup>
                   {
                     currentUser && currentUser.isAdmin && (
-                      <Link to='/darshboard?tab=dash'>
+                      <Link to='/dashboard?tab=dash'>
                         <Sidebar.Item active={tab==='dash' || !tab}
                         icon={HiChartPie}
                         as='div'
