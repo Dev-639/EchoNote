@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
+import background from '../assets/background.avif';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -15,10 +16,19 @@ export default function Home() {
     fetchPosts();
   }, []);
   return (
-    <div>
-      <div className='flex flex-col gap-6 p-10  px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl pt-10'>Welcome to my Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
+    <div className=''>
+      <div
+        className=" relative w-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${background})`,
+          minHeight: '450px',
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-none"></div>
+      <div className=' relative flex flex-col gap-6 p-10  px-3 max-w-6xl mx-auto '>
+        <h1 className='text-3xl font-bold text-gray-950 lg:text-6xl pt-10 font-serif'>Welcome to EchoNote</h1>
+        <p className='text-lg text-gray-800 '>
           Welcome to my blog! Here you'll find a wide range of articles,
           tutorials, and resources designed to help you grow as a developer.
           Whether you're interested in web development, software engineering,
@@ -32,11 +42,12 @@ export default function Home() {
         >
           View all posts
         </Link>
-        <div className='p-3 bg-amber-100 dark:bg-slate-700'>
+        <div className='relative p-3 bg-amber-100 dark:bg-slate-700'>
           <CallToAction />
         </div>
       </div>
-
+      </div>
+    
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-3'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>

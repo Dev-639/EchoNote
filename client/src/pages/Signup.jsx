@@ -46,14 +46,13 @@ export default function Signup() {
       <div className='flex flex-col md:flex-row p-3 max-w-3xl mx-auto gap-5'>
         {/* left */}
         <div className='flex-1 mt-20'>
-          <Link to="/" className='font-bold dark:text-white text-5xl'>
-            <span className='px-2 py-1 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg'>
-              Dev's
-            </span>
-            Blog
-          </Link>
-          <p className='text-sm mt-5'>This is a demo website. You can Sign Up through Email and Password or through Google.</p>
-        </div>
+                  <Link to="/" className='font-bold dark:text-white text-5xl'>
+                    <span className='px-2 py-1 text-white bg-gradient-to-r from-cyan-500 via-blue-400 to-blue-500 rounded-lg'>
+                      EchoNote
+                    </span>
+                  </Link>
+                  <p className='text-sm mt-5'>✨ EchoNote – Where every voice finds its story. Share, explore, and connect through seamless blogging.</p>
+                </div>
         {/* Right */}
         <div className='flex-1'>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>

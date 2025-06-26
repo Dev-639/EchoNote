@@ -46,12 +46,11 @@ export default function Signin() {
         {/* left */}
         <div className='flex-1 mt-20'>
           <Link to="/" className='font-bold dark:text-white text-5xl'>
-            <span className='px-2 py-1 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg'>
-              Dev's
+            <span className='px-2 py-1 text-white bg-gradient-to-r from-cyan-500 via-blue-400 to-blue-500 rounded-lg'>
+              EchoNote
             </span>
-            Blog
           </Link>
-          <p className='text-sm mt-5'>This is a demo website. You can login through Email and Password or through Google.</p>
+          <p className='text-sm mt-5'>✨ EchoNote – Where every voice finds its story. Share, explore, and connect through seamless blogging.</p>
         </div>
         {/* Right */}
         <div className='flex-1'>
